@@ -79,7 +79,7 @@ Below are the Entities used:
 
 bert-base-uncased model from huggingface was used to finetune on classification task with 5 labels.
 
-Code is available in this [notebook]().
+Code is available in this [notebook](BERT_classification with NER.ipynb).
 
 ##Results:
 
@@ -101,7 +101,7 @@ Accuracy: 28/75
 Overall accuracy: 61.65% for 5 classes.
 A little hyperparameter tuning also resulted in about 66% accuracy with slight changes in resultant confusion matrix.
 
-Validation file with both ground truth and predicted labels can be checked here.
+Validation file with both ground truth and predicted labels can be checked [here](5labelpredictions.csv).
 
 ##Challenges and Open items:
 
