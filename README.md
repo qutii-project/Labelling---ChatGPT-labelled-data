@@ -79,7 +79,7 @@ Below are the Entities used:
 
 bert-base-uncased model from huggingface was used to finetune on classification task with 5 labels.
 
-Code is available in this [notebook](BERT_classification with NER.ipynb).
+Code is available in this [notebook]('BERT_classification with NER.ipynb').
 
 ##Results:
 
