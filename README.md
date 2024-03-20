@@ -13,10 +13,10 @@ Reasons for Performance Issues: The performance of the model fell short of expec
 
 `Edit Date: 20-03-2024 (start)`
 
-Classification Approach:
+# Classification Approach:
 ---
 
-1. Bert Classification using Lexical EntitiesApproach:
+# 1. Bert Classification using Lexical EntitiesApproach:
 ---
 
 
@@ -40,7 +40,7 @@ Method used:
 Since Large Language Models such as Bert have huge no of parameters (in millions), they are data hungry, Considering the limited number of training/test data we had, the minority classes were clubbed together to form 5 labels -> analysis, strategy, science_and_tech, ethics_and_regulation, taxonomy.
 
 
-__Step 1: To perform data preprocessing, __
+## Step 1: To perform data preprocessing, __
 
 - Removed unwanted characters.
 - Removed any URLs
