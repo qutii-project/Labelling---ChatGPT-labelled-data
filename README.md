@@ -11,7 +11,7 @@ The code aims to preprocess the dataset by cleaning the text, augmenting it with
 Reasons for Performance Issues: The performance of the model fell short of expectations due to several factors. Firstly, the dataset size and complexity might have overwhelmed the resources available in the Google Colab environment, leading to longer execution times and potential crashes. Additionally, fine-tuning a BERT model requires significant computational resources, and the default configurations might not have been optimized for the specific dataset and task at hand. Furthermore, the preprocessing and augmentation techniques applied to the dataset might not have been sufficiently optimized, leading to inefficiencies during training and evaluation.
 
 
-
+Edit: 20-03-2024
 Classification Approach:
 ---
 
@@ -79,7 +79,7 @@ Below are the Entities used:
 
 bert-base-uncased model from huggingface was used to finetune on classification task with 5 labels.
 
-Code is available in this [notebook]('BERT_classification with NER.ipynb').
+Code is available in this [notebook](BERT_classification_with_NER.ipynb).
 
 ##Results:
 
@@ -113,3 +113,5 @@ This model could result in a improved accuracy with little hyperparamte tuning a
 -- Robust labelling methods to be used. 
 
 --------------
+Edit End: 20-03-2024
+
