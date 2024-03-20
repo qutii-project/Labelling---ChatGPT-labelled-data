@@ -51,37 +51,37 @@ __Step 1: To perform data preprocessing,
 -After: What is the main strategy of __organization__ like __country__ in transforming their city infrastructure and services? 
 
 Below are the Entities used:
-('Numerals that do not fall under another type', 'CARDINAL'),
- ('Absolute or relative dates or periods', 'DATE'),
- ('Named hurricanes, battles, wars, sports events, etc.', 'EVENT'),
- ('Buildings, airports, highways, bridges, etc.', 'FAC'),
- ('Countries, cities, states', 'GPE'),
- ('Any named language', 'LANGUAGE'),
- ('Named documents made into laws.', 'LAW'),
- ('Non-GPE locations, mountain ranges, bodies of water', 'LOC'),
- ('Monetary values, including unit', 'MONEY'),
- ('Nationalities or religious or political groups', 'NORP'),
- ('"first", "second", etc.', 'ORDINAL'),
- ('Companies, agencies, institutions, etc.', 'ORG'),
- ('Percentage, including "%"', 'PERCENT'),
- ('People, including fictional', 'PERSON'),
- ('Objects, vehicles, foods, etc. (not services)', 'PRODUCT'),
- ('Measurements, as of weight or distance', 'QUANTITY'),
- ('Times smaller than a day', 'TIME'),
- ('Titles of books, songs, etc.', 'WORK_OF_ART'),
- ('Non-GPE locations, mountain ranges, bodies of water', 'LOC'),
+('Numerals that do not fall under another type', 'CARDINAL'),\
+ ('Absolute or relative dates or periods', 'DATE'),\
+ ('Named hurricanes, battles, wars, sports events, etc.', 'EVENT'), \
+ ('Buildings, airports, highways, bridges, etc.', 'FAC'), \
+ ('Countries, cities, states', 'GPE'), \
+ ('Any named language', 'LANGUAGE'), \
+ ('Named documents made into laws.', 'LAW'), \
+ ('Non-GPE locations, mountain ranges, bodies of water', 'LOC'), \
+ ('Monetary values, including unit', 'MONEY'), \
+ ('Nationalities or religious or political groups', 'NORP'), \
+ ('"first", "second", etc.', 'ORDINAL'), \
+ ('Companies, agencies, institutions, etc.', 'ORG'), \
+ ('Percentage, including "%"', 'PERCENT'), \
+ ('People, including fictional', 'PERSON'), \
+ ('Objects, vehicles, foods, etc. (not services)', 'PRODUCT'), \
+ ('Measurements, as of weight or distance', 'QUANTITY'), \
+ ('Times smaller than a day', 'TIME'), \
+ ('Titles of books, songs, etc.', 'WORK_OF_ART'), \
+ ('Non-GPE locations, mountain ranges, bodies of water', 'LOC'), \
  ('Miscellaneous entities, e.g. events, nationalities, products or works of art',
-  'MISC'),
- ('Companies, agencies, institutions, etc.', 'ORG'),
- ('Named person or family.', 'PER')
+  'MISC'), \
+ ('Companies, agencies, institutions, etc.', 'ORG'), \
+ ('Named person or family.', 'PER') \
 
-__Step 2: Train a classification model using a pretrained Bert model. 
+##Step 2: Train a classification model using a pretrained Bert model. 
 
 bert-base-uncased model from huggingface was used to finetune on classification task with 5 labels.
 
-Code is available in notebook.
+Code is available in this [notebook]().
 
-__Results:
+##Results:
 
 Class: analysis
 Accuracy: 303/417
@@ -103,7 +103,7 @@ A little hyperparameter tuning also resulted in about 66% accuracy with slight c
 
 Validation file with both ground truth and predicted labels can be checked here.
 
-Challenges and Open items:
+##Challenges and Open items:
 
 -- Google colab provides limited GPU compute per week restricting the number of experiments.
 
@@ -111,3 +111,5 @@ Challenges and Open items:
 This model could result in a improved accuracy with little hyperparamte tuning and feature reduction.
 
 -- Robust labelling methods to be used. 
+
+--------------
