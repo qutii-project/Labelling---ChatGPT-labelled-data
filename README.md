@@ -40,7 +40,8 @@ Method used:
 Since Large Language Models such as Bert have huge no of parameters (in millions), they are data hungry, Considering the limited number of training/test data we had, the minority classes were clubbed together to form 5 labels -> analysis, strategy, science_and_tech, ethics_and_regulation, taxonomy.
 
 
-__Step 1: To perform data preprocessing, 
+__Step 1: To perform data preprocessing, __
+
 - Removed unwanted characters.
 - Removed any URLs
 - Since BERT model handles the cases, str.lower() was not performed
@@ -76,13 +77,13 @@ Below are the Entities used:
  ('Companies, agencies, institutions, etc.', 'ORG'), \
  ('Named person or family.', 'PER') \
 
-##Step 2: Train a classification model using a pretrained Bert model. 
+## Step 2: Train a classification model using a pretrained Bert model. 
 
 bert-base-uncased model from huggingface was used to finetune on classification task with 5 labels.
 
 Code is available in this [notebook](BERT_classification_with_NER.ipynb).
 
-##Results:
+## Results:
 
 Class: analysis
 Accuracy: 303/417
@@ -104,7 +105,7 @@ A little hyperparameter tuning also resulted in about 66% accuracy with slight c
 
 Validation file with both ground truth and predicted labels can be checked [here](5labelpredictions.csv).
 
-##Challenges and Open items:
+## Challenges and Open items:
 
 -- Google colab provides limited GPU compute per week restricting the number of experiments.
 
